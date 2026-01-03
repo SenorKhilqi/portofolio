@@ -7,6 +7,10 @@
 
     <!-- Bootstrap CSS -->      
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <title>Portofolio Muhamad Khilqi Alfadillah</title>
     <link rel="stylesheet" href="style.css">
@@ -35,19 +39,32 @@
         </div>
     </nav>
     <header id="home">
-        <h1 class="nama">Muhamad Khilqi Alfadillah</h1>
-        <p class="keterangan_head">
-            Saya, Muhamad Khilqi Alfadillah, adalah seorang mahasiswa Informatika di Universitas Siliwangi yang memiliki ketertarikan besar pada teknologi dan desain digital. Dengan latar belakang di pemrograman dan sistem digital, saya terus mengeksplorasi bagaimana desain dapat meningkatkan pengalaman pengguna dan menciptakan solusi inovatif.
-        </p>
-        <p class="keterangan_head">
-            Saya memiliki keahlian di bidang UI/UX Design, Software Development, dan Data Analysis. Bagi saya, desain bukan hanya tentang tampilan yang menarik, tetapi juga bagaimana sebuah sistem dapat bekerja secara efisien dan memberikan pengalaman yang lebih baik bagi penggunanya.
-        </p>
+        <div class="header-content">
+            <h1 class="nama" data-aos="fade-down" data-aos-duration="1000">Muhamad Khilqi Alfadillah</h1>
+            <div class="typing-container" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="typing-text">Web Developer | UI/UX Designer | Data Analyst</h2>
+            </div>
+            <p class="keterangan_head" data-aos="fade-up" data-aos-delay="500">
+                Saya, Muhamad Khilqi Alfadillah, adalah seorang mahasiswa Informatika di Universitas Siliwangi yang memiliki ketertarikan besar pada teknologi dan desain digital. Dengan latar belakang di pemrograman dan sistem digital, saya terus mengeksplorasi bagaimana desain dapat meningkatkan pengalaman pengguna dan menciptakan solusi inovatif.
+            </p>
+            <p class="keterangan_head" data-aos="fade-up" data-aos-delay="700">
+                Saya memiliki keahlian di bidang UI/UX Design, Software Development, dan Data Analysis. Bagi saya, desain bukan hanya tentang tampilan yang menarik, tetapi juga bagaimana sebuah sistem dapat bekerja secara efisien dan memberikan pengalaman yang lebih baik bagi penggunanya.
+            </p>
+            <div class="cta-buttons" data-aos="zoom-in" data-aos-delay="900">
+                <a href="#letsconnect" class="btn-primary-custom"><i class="fas fa-envelope"></i> Contact Me</a>
+                <a href="#myskill" class="btn-secondary-custom"><i class="fas fa-code"></i> My Skills</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </header>
     
     <section class="biography-section">
-        <img src="./image/profil.png" alt="profile" class="profile-img">
-        <div class="biography-content">
+        <img src="./image/profil.png" alt="profile" class="profile-img" data-aos="fade-right" data-aos-duration="1000">
+        <div class="biography-content" data-aos="fade-left" data-aos-duration="1000">
             <h2 class="biography-title">Biography</h2>
+            <div class="biography-underline"></div>
             <p class="biography-text">
                 Saya memiliki minat di bidang Front-end dan Back-end dengan penggunaan dan pemanfaatan dari framework bahasa pemrograman yang diperlukan untuk membuat project.
             </p>
@@ -55,11 +72,12 @@
     </section>
     
     <section class="what-section" id="whatido">
-        <h2 class="section-title">What I Do</h2>
+        <h2 class="section-title" data-aos="fade-up">What I Do</h2>
+        <div class="title-underline" data-aos="fade-up" data-aos-delay="100"></div>
         
         <div class="what-container">
             <!-- Deskripsi utama -->
-            <div class="what-description">
+            <div class="what-description" data-aos="fade-right" data-aos-delay="200">
                 <p>
                     Saya memiliki pengalaman dalam pembuatan aplikasi berbasis Web untuk pengenalan villa yang berisikan informasi villa dan pemesanan menggunakan Laravel. 
                     Saya juga mengembangkan Point of Sale untuk toko komputer.
@@ -68,11 +86,17 @@
     
             <!-- Kotak layanan (dalam satu baris) -->
             <div class="what-boxes">
-                <div class="what-box">
+                <div class="what-box" data-aos="flip-left" data-aos-delay="300">
+                    <div class="icon-circle">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
                     <h3>Web Development</h3>
                     <p>Proses pembuatan aplikasi menggunakan bahasa pemrograman PHP dengan framework Laravel serta database MySQL.</p>
                 </div>
-                <div class="what-box">
+                <div class="what-box" data-aos="flip-left" data-aos-delay="500">
+                    <div class="icon-circle">
+                        <i class="fas fa-cogs"></i>
+                    </div>
                     <h3>Admin Management</h3>
                     <p>Proses pemeliharaan dan pengelolaan sistem informasi secara real-time.</p>
                 </div>
@@ -80,13 +104,21 @@
         </div>
     </section>
     <section class="testi" id="testimony">
-        <h2>Testimoni Client</h2>
+        <h2 data-aos="fade-up">Testimoni Client</h2>
+        <div class="title-underline" data-aos="fade-up" data-aos-delay="100"></div>
     </section>
     <section class="testimonial-section">
         <div class="testimonial-container">
-            <div class="testimonial-box">
+            <div class="testimonial-box" data-aos="zoom-in" data-aos-delay="100">
                 <div class="testimonial-img-container">
                     <img src="./image/person.png" alt="User" class="testimonial-img">
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <blockquote>
                     <p>"Website yang dibuat sangat responsif dan mudah digunakan. Sistemnya berjalan dengan lancar tanpa kendala, dan desainnya juga menarik! Sangat puas dengan hasilnya."</p>
@@ -94,9 +126,16 @@
                 </blockquote>
             </div>
     
-            <div class="testimonial-box">
+            <div class="testimonial-box" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-img-container">
                     <img src="./image/person.png" alt="User" class="testimonial-img">
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <blockquote>
                     <p>"Sangat profesional! Fitur yang dibuat sesuai dengan kebutuhan bisnis kami. Laravel benar-benar memberikan performa yang cepat dan aman. Terima kasih atas kerja samanya."</p>
@@ -104,9 +143,16 @@
                 </blockquote>
             </div>
     
-            <div class="testimonial-box">
+            <div class="testimonial-box" data-aos="zoom-in" data-aos-delay="300">
                 <div class="testimonial-img-container">
                     <img src="./image/person.png" alt="User" class="testimonial-img">
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <blockquote>
                     <p>"Website e-commerce kami kini lebih cepat dan stabil dibandingkan sebelumnya. Backend yang dibuat dengan Laravel sangat mudah di-manage. Kami sangat puas dengan hasilnya."</p>
@@ -114,9 +160,16 @@
                 </blockquote>
             </div>
     
-            <div class="testimonial-box">
+            <div class="testimonial-box" data-aos="zoom-in" data-aos-delay="400">
                 <div class="testimonial-img-container">
                     <img src="./image/person.png" alt="User" class="testimonial-img">
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <blockquote>
                     <p>"Layanan yang diberikan sangat memuaskan! Website sekolah kami kini lebih modern dan user-friendly. Terima kasih telah membuat sistem yang handal dan mudah digunakan."</p>
@@ -127,74 +180,147 @@
     </section>
     
     <section class="skill-section" id="myskill">
-        <h2 class="skill-title">My Skill</h2>
+        <h2 class="skill-title" data-aos="fade-up">My Skill</h2>
+        <div class="title-underline" data-aos="fade-up" data-aos-delay="100"></div>
         <div class="skill-container">
             <!-- Gambar utama di sebelah kiri -->
-            <img src="./image/myskill.png" alt="Logo Semangat" class="skill-main">
+            <img src="./image/myskill.png" alt="Logo Semangat" class="skill-main" data-aos="fade-right" data-aos-duration="1000">
     
             <!-- Gambar skill lainnya di sebelah kanan -->
             <div class="skill-list">
                 <div class="skill-row">
-                    <img src="./image/Html.png" alt="HTML" class="skill-img">
-                    <img src="./image/css.png" alt="CSS" class="skill-img">
-                    <img src="./image/Javascript.png" alt="JavaScript" class="skill-img">
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="./image/Html.png" alt="HTML" class="skill-img">
+                        <span class="skill-name">HTML</span>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="./image/css.png" alt="CSS" class="skill-img">
+                        <span class="skill-name">CSS</span>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="./image/Javascript.png" alt="JavaScript" class="skill-img">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
                 </div>
                 <div class="skill-row">
-                    <img src="./image/php.png" alt="PHP" class="skill-img">
-                    <img src="./image/tailwind.png" alt="Tailwind" class="skill-img">
-                    <img src="./image/laravel.png" alt="Laravel" class="skill-img">
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./image/php.png" alt="PHP" class="skill-img">
+                        <span class="skill-name">PHP</span>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="./image/tailwind.png" alt="Tailwind" class="skill-img">
+                        <span class="skill-name">Tailwind</span>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+                        <img src="./image/laravel.png" alt="Laravel" class="skill-img">
+                        <span class="skill-name">Laravel</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="project-section">
-        <h2 class="project-title">Example My Project</h2>
+        <h2 class="project-title" data-aos="fade-up">Example My Project</h2>
+        <div class="title-underline" data-aos="fade-up" data-aos-delay="100"></div>
         <div class="project-grid">
-            <img src="./image/project1.png" alt="Project 1" class="project-img">
-            <img src="./image/project2.png" alt="Project 2" class="project-img">
-            <img src="./image/project3.png" alt="Project 3" class="project-img">
-            <img src="./image/project4.png" alt="Project 4" class="project-img">
+            <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="./image/project1.png" alt="Project 1" class="project-img">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Villa Booking System</h3>
+                        <p>Laravel Web Application</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="./image/project2.png" alt="Project 2" class="project-img">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Point of Sale</h3>
+                        <p>Computer Store Management</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="./image/project3.png" alt="Project 3" class="project-img">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Online Shopping System</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="./image/project4.png" alt="Project 4" class="project-img">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>School Website</h3>
+                        <p>Educational Portal</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
     <footer class="footer" id="letsconnect">
-        <h2 class="footer-title">Let's Connect</h2>
+        <h2 class="footer-title" data-aos="fade-up">Let's Connect</h2>
+        <div class="title-underline" data-aos="fade-up" data-aos-delay="100"></div>
         
         <!-- Container untuk ikon sosial media -->
-        <div class="footer-icons">
-            <a href="https://wa.me/085776183609" target="_blank">
+        <div class="footer-icons" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://wa.me/085776183609" target="_blank" class="social-link">
                 <img src="./image/WA.png" alt="WhatsApp" class="footer-icon">
             </a>
-            <a href="https://www.instagram.com/username" target="_blank">
+            <a href="https://www.instagram.com/username" target="_blank" class="social-link">
                 <img src="./image/IG.png" alt="Instagram" class="footer-icon">
             </a>
-            <a href="https://github.com/username" target="_blank">
+            <a href="https://github.com/username" target="_blank" class="social-link">
                 <img src="./image/git.png" alt="GitHub" class="footer-icon">
             </a>
-            <a href="https://discord.com/users/username" target="_blank">
+            <a href="https://discord.com/users/username" target="_blank" class="social-link">
                 <img src="./image/Discord.png" alt="Discord" class="footer-icon">
             </a>
-            <a href="https://www.linkedin.com/in/username" target="_blank">
+            <a href="https://www.linkedin.com/in/username" target="_blank" class="social-link">
                 <img src="./image/linked.png" alt="LinkedIn" class="footer-icon">
             </a>
-            <a href="mailto:khiliq1alfadhillah@gmail.com">
+            <a href="mailto:khiliq1alfadhillah@gmail.com" class="social-link">
                 <img src="./image/E-mail.png" alt="Gmail" class="footer-icon">
             </a>
         </div>
     
         <!-- Informasi lainnya -->
-        <p>© 2025 Kilki. All Rights Reserved.</p>
-        <p>🔗 Navigasi: Beranda | Tentang Kami | Layanan | Kontak | FAQ</p>
-        <p>📞 Hubungi Kami: khiliq1alfadhillah@gmail.com | 085776183609</p>
-        <p>🌍 Ikuti Kami: Facebook | Instagram | LinkedIn</p>
-        <p>🔒 Kebijakan: Privasi | Syarat & Ketentuan</p>
-        <p>✨ Powered by Laravel | Dibuat dengan ❤️</p>
+        <div class="footer-info" data-aos="fade-up" data-aos-delay="300">
+            <p>© 2025 Kilki. All Rights Reserved.</p>
+            <p>🔗 Navigasi: Beranda | Tentang Kami | Layanan | Kontak | FAQ</p>
+            <p>📞 Hubungi Kami: khiliq1alfadhillah@gmail.com | 085776183609</p>
+            <p>🌍 Ikuti Kami: Facebook | Instagram | LinkedIn</p>
+            <p>🔒 Kebijakan: Privasi | Syarat & Ketentuan</p>
+            <p>✨ Powered by Laravel | Dibuat dengan ❤️</p>
+        </div>
     </footer>
     
     
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script src="sidebar.js"></script>
   </body>
 </html>

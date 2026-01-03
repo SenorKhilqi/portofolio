@@ -83,4 +83,78 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial check and add resize listener
     handleResize();
     window.addEventListener('resize', handleResize);
+
+    // Scroll to Top Button
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Navbar background change on scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+            navbar.style.background = 'rgba(26, 26, 46, 0.95)';
+            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+            navbar.style.backdropFilter = 'blur(10px)';
+        } else {
+            navbar.style.background = '#343a40';
+            navbar.style.boxShadow = 'none';
+        }
+    });
+
+    // Add parallax effect to header
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const header = document.querySelector('header');
+        if (header) {
+            header.style.transform = `translateY(${scrolled * 0.5}px)`;
+            header.style.opacity = 1 - (scrolled / 600);
+        }
+    });
+
+    // Counter animation for skills (if you add counters)
+    function animateValue(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            element.innerHTML = Math.floor(progress * (end - start) + start) + '%';
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    // Observe sections for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    // Add smooth reveal animation to sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
 });
