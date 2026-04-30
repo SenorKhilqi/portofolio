@@ -28,9 +28,9 @@ const terminalText = [
     "> Module 2: Exploitation  [Loaded]",
     "> Module 3: Privilege Esc [Loaded]",
     "\nExecuting target profiling...",
-    "User: ZeroDay",
+    "User: Khilqi",
     "Role: Cyber Security Researcher",
-    "Status: Ready for deployment."
+    "Status: Informatic Students."
 ];
 
 let i = 0;
